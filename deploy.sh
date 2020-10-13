@@ -4,15 +4,18 @@
 
 GHOST_URL="localhost:2368/"
 OUTDIR=static
+gh_username="victormasson"
 
 setup() {
+		
 		echo ' -------------------- INFORMATION NEEDED -------------------- '
 		echo ''
 		echo "Following you'll be asked to enter a Github Username and Git Remote URL in which you would like to deploy Ghost."
 		echo "Example:"
 		echo "       https://github.com/victormasson/victormasson.github.io.git"
 		echo ''
-		read -p "Github username: "  gh_username
+		echo "Github username: "  gh_username
+		# read -p "Github username: "  gh_username
 		read -p "Remote URL: "  remote_url
 		echo "Leave blank if repo name is username.github.io"
 		read -p "Repo name(eg: ghost-blog-demo): " gh_repo
@@ -27,7 +30,8 @@ setup() {
 
 		git add .
 		git commit -m "Initial commit"
-		git push origin master:master master:gh-pages -f
+		git push origin gh-pages:gh-pages -f
+		# git push origin master:master master:gh-pages -f
 }
 
 update() {
