@@ -30,7 +30,7 @@ setup() {
 		git add .
 		git commit -m "Initial commit"
 		# git push origin gh-pages:gh-pages -f
-		git push origin master:master master:gh-pages -f
+		git push origin master:master -f
 }
 
 update() {
@@ -77,25 +77,25 @@ update() {
 		cd $OUTDIR
 		git add .
 		git commit -m "Update on the website at $(date)"
-		git push origin master:master master:gh-pages -f
+		git push origin master:master -f
 }
 
-# entry point
-build() {
-		mkdir $OUTDIR # this might fail when folder exist
-		cd $OUTDIR
-		repo_status="$(git status)"
-		case "fatal" in
-  			*"$repo_status"*)
-				echo '[INFO] Configuring git repository...'
-				echo '[INFO] Generating static files from Ghost server...'
-				cd ..
-				setup
-    			exit
-    		;;
-		esac
-		cd ..
-		update
-}
+# # entry point
+# build() {
+# 		mkdir $OUTDIR # this might fail when folder exist
+# 		cd $OUTDIR
+# 		repo_status="$(git status)"
+# 		case "fatal" in
+#   			*"$repo_status"*)
+# 				echo '[INFO] Configuring git repository...'
+# 				echo '[INFO] Generating static files from Ghost server...'
+# 				cd ..
+# 				setup
+#     			exit
+#     		;;
+# 		esac
+# 		cd ..
+# 		update
+# }
 
 build
