@@ -19,9 +19,9 @@ setup() {
 		echo "Leave blank if repo name is username.github.io"
 		read -p "Repo name(eg: ghost-blog-demo): " gh_repo
 
-		wget -r -nH -P $OUTDIR -E -T 2 -np -k $GHOST_URL
+		#wget -r -nH -P $OUTDIR -E -T 2 -np -k $GHOST_URL
 
-		find $OUTDIR -name *.html -type f -exec sed -i '''s#http://localhost:2368#'$gh_username'.github.io/'$gh_repo'#g' {} \;
+		# find $OUTDIR -name *.html -type f -exec sed -i '''s#http://localhost:2368#'$gh_username'.github.io/'$gh_repo'#g' {} \;
 
 		cd $OUTDIR
 		git init
@@ -34,9 +34,9 @@ setup() {
 }
 
 update() {
-		rm -rf $OUTDIR/*
+		# rm -rf $OUTDIR/*
 
-		wget -r -nH -P $OUTDIR -E -T 2 -np -k $GHOST_URL
+		# wget -r -nH -P $OUTDIR -E -T 2 -np -k $GHOST_URL
 
 		echo ''
 		echo ' -------------------- FIXING LINKS  -------------------- '
@@ -46,7 +46,7 @@ update() {
 		read -p "Repo name(eg: ghost-blog-demo): " gh_repo
 
 		# Fix links
-		find $OUTDIR -name *.html -type f -exec sed -i '''s#http://localhost:2368#'$gh_username'.github.io/'$gh_repo'#g' {} \;
+		# find $OUTDIR -name *.html -type f -exec sed -i '''s#http://localhost:2368#'$gh_username'.github.io/'$gh_repo'#g' {} \;
 
 		echo ''
 		echo ' ------------------- FIXING IMAGES  -------------------- '
