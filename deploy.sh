@@ -97,5 +97,3 @@ update() {
 # 		cd ..
 # 		update
 # }
-
-build

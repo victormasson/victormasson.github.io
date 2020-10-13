@@ -2,6 +2,7 @@
 
 ## Static generation
 ```
+npm i ghost-static
 ghost-static
 ```
 
