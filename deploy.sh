@@ -4,7 +4,6 @@
 
 GHOST_URL="localhost:2368/"
 OUTDIR=static
-gh_username="victormasson"
 
 setup() {
 		
@@ -15,7 +14,7 @@ setup() {
 		echo "       https://github.com/victormasson/victormasson.github.io.git"
 		echo ''
 		echo "Github username: "  gh_username
-		# read -p "Github username: "  gh_username
+		read -p "Github username: "  gh_username
 		read -p "Remote URL: "  remote_url
 		echo "Leave blank if repo name is username.github.io"
 		read -p "Repo name(eg: ghost-blog-demo): " gh_repo
@@ -30,8 +29,8 @@ setup() {
 
 		git add .
 		git commit -m "Initial commit"
-		git push origin gh-pages:gh-pages -f
-		# git push origin master:master master:gh-pages -f
+		# git push origin gh-pages:gh-pages -f
+		git push origin master:master master:gh-pages -f
 }
 
 update() {
