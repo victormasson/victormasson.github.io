@@ -1,69 +1,128 @@
-# Casper
+# Liebling
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+Liebling is a beautiful and clean Ghost theme that is easy and comfortable to use. **It's free** and you can use it for any kind of content you might have. Now with dark mode 🌓!
 
-&nbsp;
+If you find this theme useful, please consider to make a donation to support its development! 🙏🏼
 
-![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
+<a href="https://www.buymeacoffee.com/eddiesigner" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
 
-&nbsp;
+## Preview
 
-# First time using a Ghost theme?
+You can see a live demo here: [https://liebling.eduardogomez.io](https://liebling.eduardogomez.io)
 
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
+![](https://res.cloudinary.com/edev/image/upload/v1583792928/liebling/liebling-promo-desktop.jpg)
+<br><br>
+![](https://res.cloudinary.com/edev/image/upload/v1570370297/liebling/liebling-promo-mobile.jpg)
 
-This theme has lots of code comments to help explain what's going on just by reading the code. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://ghost.org/docs/api/handlebars-themes/) which explains every possible Handlebars helper and template.
+## Download
 
-**The main files are:**
+To get the latest version please head over the [releases page](https://github.com/eddiesigner/liebling/releases) and download the file `liebling.zip` of the latest release.
 
-- `default.hbs` - The parent template file, which includes your global header/footer
-- `index.hbs` - The main template to generate a list of posts, usually the home page
-- `post.hbs` - The template used to render individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives, eg. "all posts tagged with `news`"
-- `author.hbs` - Used for author archives, eg. "all posts written by Jamie"
+**IMPORTANT: To know how to enable the search, comments, newsletter and more, please head to the [Wiki](https://github.com/eddiesigner/liebling/wiki).**
 
-One neat trick is that you can also create custom one-off templates by adding the slug of a page to a template file. For example:
+From now on, this theme is only compatible with Ghost 3
 
-- `page-about.hbs` - Custom template for an `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
+## Features
 
+### General features
 
-# Development
+* Clean and beautiful design 💅🏼
+* Lightning fast ⚡️
+* Fully responsive, looks great on any device 📱
+* Compatible with modern browsers 💻
+* Fast support 📞
 
-Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+### Ghost features
 
-```bash
-# install dependencies
-yarn install
+* Subscription form [more info here](https://github.com/eddiesigner/liebling/wiki/How-to-enable-subscribers)
+* Multiple authors
+* Logo support
+* Secondary menu
+* Featured posts and pages
+* Post, Page, Tag, Authors, pages
+* Koenig editor
+* Bookmark card
+* Gallery card
+* Blog title and description
+* Cover image for Home, Post, Page, Tag, Author pages
+* Author avatar, bio, location, website and social links
+* Facebook and Twitter social links
+* Reading time
+* Next and Previous post navigation
+* Primary tag in posts
 
-# run development server
-yarn dev
-```
+### Liebling unique features
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+* Dark mode
+* Search
+* Custom Subscribe page
+* Custom authors page
+* Custom error page
+* Medium style image zoom
+* Comments with Disqus
+* Share post on Facebook and Twitter
+* Slider for featured posts
+* Support for normal, wide and full images in posts
+* Reading progress indicator
+* RTL language support
 
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
+## Localization
 
-```bash
-# create .zip file
-yarn zip
-```
+* English
+* Spanish
+* German by [D3473R](https://github.com/D3473R)
+* Informal german by [D3473R](https://github.com/D3473R)
+* Bulgarian by [clappingmonkey](https://github.com/clappingmonkey)
+* Vietnamese by [hiensarahly](https://github.com/hiensarahly)
+* Italian by [vignini](https://github.com/vignini)
+* French by [v1nc3nt-fr](https://github.com/v1nc3nt-fr)
+* Informal french by [v1nc3nt-fr](https://github.com/v1nc3nt-fr)
+* Portuguese by [ivomota](https://github.com/ivomota)
+* Arabic by [allamiro](https://github.com/allamiro)
+* Polish by [otlet](https://github.com/otlet)
+* Brazilian portuguese by [pedrinholula](https://github.com/pedrinholula)
+* Russian by [stereohorse](https://github.com/stereohorse)
+* Kyrgyz by [januchaos](https://github.com/januchaos)
+* Hebrew by [cohen604](https://github.com/cohen604)
+* Turkish by [mskoroglu](https://github.com/mskoroglu)
+* Romanian by [dsecareanu](https://github.com/dsecareanu)
+* Chinese Simplified by [IvyB](https://github.com/IvyB)
+* Indonesian by [iqbalbinsb](https://github.com/iqbalbinsb)
+* Lithuanian by [pintom](https://github.com/pintom)
+* Dutch by [Qballjos](https://github.com/Qballjos)
+* Traditional Chinese by [weixiang](https://github.com/weixiang)
+* Persian (Farsi) by [Aminoiz](https://github.com/Aminoiz)
 
-# PostCSS Features Used
+## Tests performed
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
+* W3C Markup Validation: [Correct validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliebling.eduardogomez.io%2F)
+* Ghost GScan: [100/100 points](https://gscan.ghost.org/)
+* GTmetrix PageSpeed Score: **A (97%)**
+* PageSpeed Insights: **94/100** (mobile) **99/100** (desktop)
+* Pingdom Performance Grade: **A 91**
 
+## Theme development
 
-# SVG Icons
+Thanks to [D3473R](https://github.com/D3473R) 💪🏼 for creating a development environment with Docker. From now on you can work on this theme without installing a Ghost instance on your local machine. With two commands you have an instant development setup and you can build the theme for production.
 
-Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
+Please take a look to this page to see how it works: https://github.com/eddiesigner/liebling/wiki/Theme-development-with-Docker
 
-You can add your own SVG icons in the same manner.
+## Help and Support
 
+If you have any questions or troubles with this product, please feel free to open an issue [here](https://github.com/eddiesigner/liebling/issues).
 
-# Copyright & License
+## Contributing
 
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+Contributions are very welcome. First, please read the [Pull Request Guidelines](https://github.com/eddiesigner/liebling/wiki/Pull-Request-Guidelines) on the wiki.
+
+## Related
+
+* [Weiss Pro](https://blog.eduardogomez.io/weiss-pro-modern-and-clean-ghost-theme/) - Modern and beautiful Ghost theme ready to make your content shine ✨
+
+## License
+
+Copyright (c) 2019-2020 Eduardo Gómez. Released under the [MIT license](https://github.com/eddiesigner/liebling/blob/master/LICENSE).
+
+## Credits
+
+All the photos I used in this theme were taken from [Unsplash](https://unsplash.com)
