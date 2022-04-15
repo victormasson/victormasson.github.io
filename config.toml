@@ -1,0 +1,23 @@
+base_url = "https://zola-hallo.janbaudisch.dev"
+title = "Hi there 👋"
+
+compile_sass = true
+
+highlight_code = false
+
+build_search_index = false
+
+[extra]
+title = "Hi there 👋"
+links = [
+    { title = "GitHub", url = "https://github.com/victormasson", icon = "github" },
+    { title = "Twitter", url = "https://twitter.com/vicmassv", icon = "twitter" }
+]
+
+[extra.author]
+name = "Hallo"
+
+[extra.theme]
+background = "#404256" #"#6FCDBD"
+foreground = "#5F74A6" #"#FFF"
+hover = "#333"
