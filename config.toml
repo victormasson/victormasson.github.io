@@ -1,4 +1,4 @@
-base_url = "https://zola-hallo.janbaudisch.dev"
+base_url = "https://victormasson.github.io/"
 title = "Hi there 👋"
 
 compile_sass = true
