@@ -13,6 +13,9 @@ links = [
     { title = "GitHub", url = "https://github.com/victormasson", icon = "github" },
     { title = "Twitter", url = "https://twitter.com/vicmassv", icon = "twitter" }
 ]
+projects = [
+    { title = "Minsweeper", url = "https://victormasson.github.io/RustTuto/", icon = "land-mine-on" },
+]
 
 [extra.author]
 name = "Hallo"
